@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan's Portfolio</title>
+</head>
+<body>
+    <hr>
+    <h1>Nathan Benimo</h1>
+    <nav>
+        <a href="about">About</a>
+        <a href="skills">Skills</a>
+        <a href="goals">Goals</a>
+        <a href="form">Form</a>
+    </nav>
+    </header>
+<hr>
+    <main>
+    <section id="about">
+        <h2>About Nathan</h2>
+        <p>My name is Benimo Nathan, from Bayelsea State and i am learning web development at the LLA Tech Bootcamp</p>
+        <img src="/assets/code-img.jpg" alt="image codes">
+    </section>
+<hr>
+    <section id="skills">
+        <h2>Some skills i'll love to learn in 2026</h2>
+        <ul>
+            <li>I'd love to learn how to create and publish a website</li>
+            <li>I'd love to learn how to learn video editing </li>
+        </ul>
+    </section>
+<hr>
+    <section id="goals">
+        <h2>things i'd love to achieve at the end of 2026</h2>
+        <ol>
+            <li>Shoot, edit, and post a video on YouTube</li>
+            <li>code and publish a website like <a href="https://linkedin.com" target="_blank">Visit Linkedin</a></li>
+        </ol>
+    </section>
+<hr>    
+    <section id="form">
+        <form action="" method="POST">
+            <label for="fname">First name</label><br>
+            <input type="text" id="fname" placeholder="enter your first name" name="fname"><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" placeholder="enter your last name" name="lname"><br>
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" placeholder="Enter Your Email Address" name="email"><br>
+            <label for="number">Phone Number</label><br>
+            <input type="number" id="number" placeholder="Enter Your Phone Number" name="number"><br>
+        <!--what are you contacting me for?-->
+            <label for="source">What Services are You Interested In?</label><br>
+            <select name="source" id="source">
+                <option value="">Choose One</option>
+                <option value="web design">Web Design</option>
+                <option value="portfolio">Portfolio</option>
+                <option value="website">Website</option>
+                <option value="graphic design">Graphic Design</option>
+            </select>
+        <!--gender-->
+            <p>Select Gender</p>
+            <input type="radio" id="gender" value="male">
+            <label for="name">Male</label>
+            <input type="radio" id="gender" value="female">
+            <label for="name">Female</label>
+
+        <br><!--message-->
+            <label for="message">Message</label> 
+            <textarea name="message" id="message" rows="6"></textarea><br>
+            <button type="submit">Submit</button>
+
+
+        </form>
+
+    </section>
+   </main>
+    
+</body>
+</html>
