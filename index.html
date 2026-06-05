@@ -3,52 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Nathan's Portfolio</title>
 </head>
 <body>
-    <hr>
+    <header class="site-header">
     <h1>Nathan Benimo</h1>
-    <nav>
-        <a href="about">About</a>
-        <a href="skills">Skills</a>
-        <a href="goals">Goals</a>
-        <a href="form">Form</a>
+    <nav class="navbar">
+        <a href="#about" class="nav-links">About</a>
+        <a href="#skills" class="nav-links">Skills</a>
+        <a href="#goals" class="nav-links">Goals</a>
+        <a href="#contact" class="nav-links">Contact</a>
     </nav>
     </header>
-<hr>
     <main>
-    <section id="about">
-        <h2>About Nathan</h2>
+    <section id="about" class="about-section page-section">
+        <h2 class="title">About Nathan</h2>
         <p>My name is Benimo Nathan, from Bayelsea State and i am learning web development at the LLA Tech Bootcamp</p>
+        <aside class="fun-fact">
+            <h2>fun fact</h2>
+            <p>i am a really fast learner</p>
+        </aside>
+        <figure class="profile-figure">
         <img src="/assets/code-img.jpg" alt="image codes">
+        <figcaption>photo of codes</figcaption>
+        </figure>
     </section>
-<hr>
-    <section id="skills">
-        <h2>Some skills i'll love to learn in 2026</h2>
+    <section id="skills" class="skill-section page-section">
+        <h2 class="title">Skills and Interests</h2>
         <ul>
-            <li>I'd love to learn how to create and publish a website</li>
-            <li>I'd love to learn how to learn video editing </li>
+            <li>Web Development</li>
+            <li>Video Editing </li>
+            <li>Data Analysis</li>
+            <li>Cybersecurity</li>
+            <li>Database Management</li>
         </ul>
     </section>
-<hr>
-    <section id="goals">
-        <h2>things i'd love to achieve at the end of 2026</h2>
-        <ol>
+    <section id="goals" class="goals-section page-section">
+        <h2 class="title">Projects and Goals</h2>
+        <ol class="goals-list">
             <li>Shoot, edit, and post a video on YouTube</li>
             <li>code and publish a website like <a href="https://linkedin.com" target="_blank">Visit Linkedin</a></li>
         </ol>
-    </section>
-<hr>    
-    <section id="form">
+    </section>    
+    <section id="contact" class="page-section">
         <form action="" method="POST">
             <label for="fname">First name</label><br>
-            <input type="text" id="fname" placeholder="enter your first name" name="fname"><br>
+            <input type="text" id="fname" placeholder="enter your first name" name="fname" class="input-field"><br><br>
             <label for="lname">Last Name</label><br>
-            <input type="text" id="lname" placeholder="enter your last name" name="lname"><br>
+            <input type="text" id="lname" placeholder="enter your last name" name="lname" class="input-field"><br><br>
             <label for="email">Email Address</label><br>
-            <input type="email" id="email" placeholder="Enter Your Email Address" name="email"><br>
+            <input type="email" id="email" placeholder="Enter Your Email Address" name="email" class="input-field"><br><br>
             <label for="number">Phone Number</label><br>
-            <input type="number" id="number" placeholder="Enter Your Phone Number" name="number"><br>
+            <input type="number" id="number" placeholder="Enter Your Phone Number" name="number" class="input-field"><br><br>
         <!--what are you contacting me for?-->
             <label for="source">What Services are You Interested In?</label><br>
             <select name="source" id="source">
@@ -57,15 +67,15 @@
                 <option value="portfolio">Portfolio</option>
                 <option value="website">Website</option>
                 <option value="graphic design">Graphic Design</option>
-            </select>
+            </select><br><br>
         <!--gender-->
             <p>Select Gender</p>
             <input type="radio" id="gender" value="male">
-            <label for="name">Male</label>
+            <label for="name">Male</label><br>
             <input type="radio" id="gender" value="female">
-            <label for="name">Female</label>
+            <label for="name">Female</label><br><br>
 
-        <br><!--message-->
+        <!--message-->
             <label for="message">Message</label> 
             <textarea name="message" id="message" rows="6"></textarea><br>
             <button type="submit">Submit</button>
@@ -74,7 +84,11 @@
         </form>
 
     </section>
-   </main>
+</main>
+   <footer class="site-footer">
+        <h3>Benimo Nathan</h3>
+        <p>2026</p>
+   </footer>
     
 </body>
 </html>
